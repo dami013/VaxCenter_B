@@ -143,7 +143,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 📞 Support
 For support and queries:
 - Create an issue in the GitHub repository
-- Contact the development team at [team@vaxcenter.com](mailto:team@vaxcenter.com)
 
 ---
 <div align="center">
