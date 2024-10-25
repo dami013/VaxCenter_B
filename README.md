@@ -1,5 +1,7 @@
 <div align="center">
+  
   ![alt text](https://github.com/dami013/VaxCenter_B/blob/main/img/logo.png)
+  
   # VaxCenter
   ![Version](https://img.shields.io/badge/version-1.0-blue)
   ![Java](https://img.shields.io/badge/Java-8-red)
