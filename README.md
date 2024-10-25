@@ -1,7 +1,18 @@
 <div align="center">
   
   # VaxCenter
-  [Logo would be placed here in actual README]
+ <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main circle -->
+  <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#2563eb" stroke-width="6"/>
+  
+  <!-- Cross symbol -->
+  <path d="M85 40 h30 v45 h45 v30 h-45 v45 h-30 v-45 h-45 v-30 h45 z" fill="#2563eb"/>
+  
+  <!-- Circular arc representing a shield -->
+  <path d="M100,20 A80,80 0 0,1 180,100" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M100,20 A80,80 0 0,0 20,100" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+</svg>
+
   
   ![Version](https://img.shields.io/badge/version-1.0-blue)
   ![Java](https://img.shields.io/badge/Java-8-red)
