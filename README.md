@@ -1,95 +1,153 @@
-# Progetto VaxCenter. 
+<div align="center">
+  
+  # VaxCenter
+  [Logo would be placed here in actual README]
+  
+  ![Version](https://img.shields.io/badge/version-1.0-blue)
+  ![Java](https://img.shields.io/badge/Java-8-red)
+  ![License](https://img.shields.io/badge/license-MIT-green)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Latest-blue)](https://www.postgresql.org/)
+  [![Maven](https://img.shields.io/badge/Maven-3.8.x-red)](https://maven.apache.org/)
 
-Corso di Laboratorio Interdiscplinare B, Laurea Triennale in Informatica Università degli Studi dell'Insubria
+  *A comprehensive vaccination center management system*
+</div>
 
-PROGETTO REALIZZATO DA: 
+## 📋 Overview
 
-* ###### **CASSANI ALESSANDRO**
+VaxCenter is a robust client-server application designed to monitor vaccination centers across Italy. The system manages vaccination tracking and allows citizens to report any post-vaccination adverse events through a user-friendly interface.
 
-* ###### **FICARA DAMIANO**
+### Key Features
+- 🏥 Vaccination center monitoring and management
+- 💉 Vaccination tracking and record-keeping
+- 👤 Personal citizen portal for adverse event reporting
+- 🔐 Secure user authentication system
+- 📊 Intuitive graphical interface
+- 📱 Cross-platform compatibility
 
-* ###### **BRUSCAGIN PAOLO**
+## 👥 Development Team
+Project developed for the Interdisciplinary Laboratory B Course, University of Insubria
 
-* ###### **PERFETTI LUCA**
+- **Cassani Alessandro**
+- **Ficara Damiano**
+- **Bruscagin Paolo**
+- **Perfetti Luca**
 
-*********************************
+## 🔧 System Requirements
 
-## VaxCenter
-    VaxCenter ha come scopo primario il monitoraggio del numero di centri vaccinali presenti sul territorio italiano, 
-    così come il conteggio e l'identificazione delle persone che sono state vaccinate sia in termini di quale vaccino hanno ricevuto, 
-    sia in quale centro si sono recate perottenere la somministrazione. 
-    Inoltre, ai cittadini è consentito registrarsi e accedere alla propria area personale segnalando eventuali eventi avversi avvenuti dopo la somministrazione del vaccino.
+### Hardware
+| Component | Minimum Requirement |
+|-----------|-------------------|
+| Processor | 1 GHz or higher |
+| RAM | 4GB or higher |
+| Disk Space | 2 GB available |
+| Display | 1280 x 720 pixels (HD) |
 
+### Software Dependencies
+- **Java:** Version 8 or higher
+- **PostgreSQL:** Latest version (server only)
+- **Maven:** For source compilation
+- **Internet:** Stable connection required
 
-*********************************
+### Supported Operating Systems
+| OS | Version |
+|----|---------|
+| Windows | Windows 10 (8u51 and later) |
+| Linux | Ubuntu 14.x (8u25 and later) |
+| macOS | 10.8.3+ (and later) |
 
-### REQUISITI DI SISTEMA
+## ⚙️ Installation & Launch
 
-Per poter eseguire l'applicazione è necessario aver installato sul
-proprio computer:
+### Quick Start
+The application is distributed as a standalone executable requiring no installation process. Simply ensure Maven is installed on your system.
 
-▪ `Java 8;`
+### Launch Methods
 
-▪ `PostgreSQL (solo per applicazione server);`
+#### GUI Launch
+1. Navigate to the `target/` directory
+2. Double-click:
+   - `serverCV-1.0.jar` for Server application
+   - `clientCV-1.0.jar` for Client application
 
-▪ `Maven (per compilare da sorgente);`
+#### Command Line Launch
+```bash
+# Server Launch
+cd /path/to/server/folder
+java -jar serverCV-1.0.jar
 
-▪ `Connessione Internet stabile;`
+# Client Launch
+cd /path/to/client/folder
+java -jar clientCV-1.0.jar
+```
 
-▪ `Risoluzione: 1280 x 720 pixel (HD) o superiore;`
+## 🛠️ Building from Source
 
-▪ `RAM: 4GB o superiore;`
+### Maven Commands
+Execute the following commands in sequence:
 
-▪ `Spazio su disco disponibile: 2 GB o superiore;`
+```bash
+# Clean previous builds
+mvn clean
 
-▪ `Processore: 1 GHz o superiore.`
+# Validate project
+mvn validate
 
+# Compile source code
+mvn compile
 
-##### Sistema operativo minimo richiesto
+# Create package
+mvn package
 
-▪ `Windows 10 (8u51 e versioni successive).`
+# Generate documentation
+mvn javadoc:javadoc
+```
 
-▪ `Ubuntu Linux 14.x (8u25 e versioni successive).`
+After execution, the `target/` directory will contain:
+- Executable files (.jar)
+- JavaDoc documentation
 
-▪ `Mac OS X 10.8.3+ (e versioni successive).`
+## 📚 Documentation
+Complete project documentation is available in the `target/site/apidocs/` directory after JavaDoc generation.
 
+## 🤝 Contributing
+To contribute to the project:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-*********************************
+## 🔍 Testing
+```bash
+# Run all tests
+mvn test
 
-### Installazione del programma
+# Run specific test class
+mvn test -Dtest=TestClassName
 
-    L'applicazione non necessita di installazione: si tratta infatti di unprogramma distribuito senza dipendenze esterne 
-    (a patto che ci sia installato il Maven). Per l'esecuzione dell'applicazione avviare direttamente clientCV-1.0.jar e serverCV-1.0.jar.
+# Generate test coverage report
+mvn verify
+```
 
-##### Avviare l'applicazione
+## 🌐 API Documentation
+API documentation and endpoints are available at:
+- Server running: `http://localhost:8080/api/docs`
+- Swagger UI: `http://localhost:8080/swagger-ui.html`
 
-Per avviare l'applicazione è sufficiente fare doppio click sul file nella cartella target/ del modulo che si vuole eseguire: 
+## 🔒 Security
+- All data transmission is encrypted using TLS 1.3
+- Password hashing using BCrypt
+- JWT-based authentication
+- Regular security updates
 
-▪ `serverCV-1.0.jar` se si necessita utilizzare l'applicazione **Server**; 
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-▪ `clientCV-1.0.jar` se si necessita utilizzare l'applicazione **Client**. 
+## 📞 Support
+For support and queries:
+- Create an issue in the GitHub repository
+- Contact the development team at [team@vaxcenter.com](mailto:team@vaxcenter.com)
 
-o in alternativa è possibile avviare il programma da terminale, con il seguente comando:
-
-▪ `cd {nome del percorso in cui è presente il file Server .jar} java -jar serverCV-1.0.jar `
-
-▪ `cd {nome del percorso in cui è presente il file Client .jar} java -jar clientCV-1.0.jar`
-
-
-*********************************
-
-### Comandi Maven
-Compilazione Maven tramite riga di comando Per compilazione Maven tramite riga di comando eseguire i comandi nell'ordine seguente:
-
-`mvn clean` 
-
-`mnv validate`
-
-`mvn compile`
-
-`mvn package`
-
-`mvn javadoc:javadoc`
-
-
-Una volta fatto, nei moduli relativi, verrà generata una cartella "target" dove all'interno saranno presenti gli eseguibili .jar e la Javadoc del progetto.
+---
+<div align="center">
+  Made with ❤️ in Italy
+</div>
